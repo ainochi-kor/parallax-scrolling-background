@@ -21,6 +21,9 @@ importers:
       '@devshareacademy/tsconfig':
         specifier: 0.0.3
         version: 0.0.3
+      '@types/node':
+        specifier: ^22.13.5
+        version: 22.13.5
       '@typescript-eslint/eslint-plugin':
         specifier: 5.22.0
         version: 5.22.0(@typescript-eslint/parser@5.22.0(eslint@8.14.0)(typescript@4.6.4))(eslint@8.14.0)(typescript@4.6.4)
@@ -97,6 +100,9 @@ packages:
 
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
+
+  '@types/node@22.13.5':
+    resolution: {integrity: sha512-+lTU0PxZXn0Dr1NBtC7Y8cR21AJr87dLLU953CWA6pMxxv/UDc7jYAY90upcrie1nRcD6XNG5HOYEDtgW5TxAg==}
 
   '@typescript-eslint/eslint-plugin@5.22.0':
     resolution: {integrity: sha512-YCiy5PUzpAeOPGQ7VSGDEY2NeYUV1B0swde2e0HzokRsHBYjSdF6DZ51OuRZxVPHx0032lXGLvOMls91D8FXlg==}
@@ -762,6 +768,9 @@ packages:
     engines: {node: '>=4.2.0'}
     hasBin: true
 
+  undici-types@6.20.0:
+    resolution: {integrity: sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg==}
+
   uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
 
@@ -854,6 +863,10 @@ snapshots:
       fastq: 1.19.0
 
   '@types/json-schema@7.0.15': {}
+
+  '@types/node@22.13.5':
+    dependencies:
+      undici-types: 6.20.0
 
   '@typescript-eslint/eslint-plugin@5.22.0(@typescript-eslint/parser@5.22.0(eslint@8.14.0)(typescript@4.6.4))(eslint@8.14.0)(typescript@4.6.4)':
     dependencies:
@@ -1461,6 +1474,8 @@ snapshots:
   type-fest@0.20.2: {}
 
   typescript@4.6.4: {}
+
+  undici-types@6.20.0: {}
 
   uri-js@4.4.1:
     dependencies:
